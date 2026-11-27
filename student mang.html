@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Management Club</title>
+<style>
+:root{--navy:#14213d;--blue:#2563eb;--sky:#eaf3ff;--gold:#fca311;--ink:#1f2937}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#f6f8fc}
+header{position:sticky;top:0;z-index:5;background:var(--navy);color:white;padding:13px 5%;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;box-shadow:0 3px 12px #0002}
+.brand{font-weight:800;letter-spacing:.4px}
+nav{display:flex;gap:8px;flex-wrap:wrap}
+nav a{color:white;text-decoration:none;font-size:13px;padding:8px 10px;border-radius:20px}
+nav a:hover{background:#ffffff25}
+section{min-height:88vh;padding:65px 7%;display:flex;flex-direction:column;justify-content:center;scroll-margin-top:75px}
+.hero{background:linear-gradient(120deg,#14213d,#2563eb);color:white;text-align:center}
+h1,h2{margin:0 0 18px}
+h1{font-size:clamp(32px,6vw,58px)}
+h2{font-size:clamp(27px,4vw,40px);color:var(--navy)}
+.hero h2{color:white}
+marquee{font-size:clamp(27px,4vw,42px);font-weight:800;color:inherit;margin-bottom:20px}
+.intro{max-width:780px;margin:0 auto 28px;line-height:1.75;font-size:17px}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:18px;margin:25px 0}
+.gallery img{width:100%;height:210px;object-fit:cover;border-radius:17px;box-shadow:0 8px 22px #14213d20}
+.content{max-width:1000px;margin:auto;width:100%}
+.lead{line-height:1.8;font-size:17px;max-width:850px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin:24px 0}
+.card{background:white;padding:22px;border-radius:18px;box-shadow:0 6px 22px #14213d12}
+.card h3{color:var(--blue);margin-top:0}
+.card p{line-height:1.65}
+.btn{display:inline-block;background:var(--gold);color:#14213d;text-decoration:none;font-weight:800;padding:13px 23px;border-radius:28px;margin-top:18px;border:0;cursor:pointer;font-size:15px}
+.btn:hover{filter:brightness(.96);transform:translateY(-1px)}
+.center{text-align:center}
+.type-img{height:190px!important}
+.register{background:linear-gradient(135deg,#eaf3ff,#fff7e7)}
+form{max-width:620px;background:white;padding:28px;border-radius:20px;box-shadow:0 8px 28px #14213d18;margin:18px auto;width:100%}
+label{display:block;font-weight:700;margin:13px 0 6px}
+input,select{width:100%;padding:13px;border:1px solid #cbd5e1;border-radius:10px;font-size:15px}
+form .btn{width:100%}
+footer{text-align:center;background:var(--navy);color:white;padding:20px;font-size:13px}
+.small{font-size:13px;opacity:.8}
+@media(max-width:600px){header{justify-content:center}section{padding:48px 6%}.gallery img{height:180px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="brand">🎓 STUDENT CLUB HUB</div>
+  <nav>
+    <a href="#home">Home</a><a href="#uses">Uses</a><a href="#types">Club Types</a><a href="#academic">Academic</a><a href="#cultural">Cultural</a><a href="#register">Register</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div class="content">
+    <marquee behavior="scroll" direction="left" scrollamount="5">STUDENT MANAGEMENT CLUB</marquee>
+    <p class="intro">Welcome to the Student Management Club! This club is a place where students can learn, share ideas, develop leadership skills and take part in useful activities. It helps students work together, build confidence and make their college life more active and enjoyable.</p>
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=900&q=85" alt="Students studying together">
+      <img src="https://images.unsplash.com/photo-1529390079861-591de354faf5?auto=format&fit=crop&w=900&q=85" alt="Students working together">
+      <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=900&q=85" alt="Students celebrating graduation">
+    </div>
+    <a class="btn" href="#uses">Next Page →</a>
+  </div>
+</section>
+
+<section id="uses">
+  <div class="content">
+    <h2 class="center">Uses of Student Management Club</h2>
+    <p class="lead center">A Student Management Club gives students opportunities to improve their skills beyond classroom learning. It encourages teamwork, responsibility and active participation.</p>
+    <div class="cards">
+      <article class="card"><h3>Leadership Skills</h3><p>Students learn how to guide a team, make decisions and take responsibility.</p></article>
+      <article class="card"><h3>Teamwork</h3><p>Students work together, share ideas and support one another during activities.</p></article>
+      <article class="card"><h3>Communication</h3><p>Club activities help students speak confidently and express their thoughts clearly.</p></article>
+      <article class="card"><h3>Creativity</h3><p>Students get chances to plan events, solve problems and try new ideas.</p></article>
+    </div>
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&w=900&q=85" alt="Students collaborating">
+      <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=900&q=85" alt="Students sharing a group activity">
+    </div>
+    <div class="center"><a class="btn" href="#types">Next Page →</a></div>
+  </div>
+</section>
+
+<section id="types">
+  <div class="content">
+    <h2 class="center">Types of Clubs in Student Management Club</h2>
+    <p class="lead center">Students can choose different clubs based on their interests and talents. Each club helps them learn something new.</p>
+    <div class="cards">
+      <article class="card"><h3>1. Academic Club</h3><p>Focuses on learning, knowledge sharing, quizzes and subject-related activities.</p></article>
+      <article class="card"><h3>2. Cultural Club</h3><p>Encourages students to take part in music, dance, drama and cultural events.</p></article>
+      <article class="card"><h3>3. Sports Club</h3><p>Promotes physical activity, team spirit and sports competitions.</p></article>
+      <article class="card"><h3>4. Environment Club</h3><p>Creates awareness about nature, cleanliness and protecting the environment.</p></article>
+      <article class="card"><h3>5. Social Service Club</h3><p>Encourages volunteering and helping people in the community.</p></article>
+      <article class="card"><h3>6. Technology Club</h3><p>Gives students opportunities to explore computers, coding and new technology.</p></article>
+    </div>
+    <div class="center"><a class="btn" href="#academic">Next Page →</a></div>
+  </div>
+</section>
+
+<section id="academic">
+  <div class="content">
+    <marquee behavior="alternate" direction="right"><h2>ACADEMIC CLUB</h2></marquee>
+    <p class="lead">The Academic Club helps students improve their knowledge and learning skills. It organises quiz competitions, group discussions, seminars, workshops and subject-based activities. Students can share ideas, ask questions and learn from one another. This club develops confidence, critical thinking and a love for learning.</p>
+    <div class="gallery">
+      <img class="type-img" src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=900&q=85" alt="Students learning in a classroom">
+      <img class="type-img" src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=85" alt="Students working on a learning activity">
+    </div>
+    <div class="center"><a class="btn" href="#cultural">Next Page →</a></div>
+  </div>
+</section>
+
+<section id="cultural">
+  <div class="content">
+    <marquee behavior="scroll" direction="left" scrollamount="4"><h2>CULTURAL CLUB</h2></marquee>
+    <p class="lead">The Cultural Club encourages students to express their talents and celebrate different cultures. It organises music, dance, drama, singing, festivals and cultural programmes. Students get a chance to perform, work as a team and respect different traditions. This club develops creativity, confidence and friendship.</p>
+    <div class="gallery">
+      <img class="type-img" src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=900&q=85" alt="Students enjoying a live cultural event">
+      <img class="type-img" src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=900&q=85" alt="Students at a music event">
+    </div>
+    <div class="center"><a class="btn" href="#register">Next Page →</a></div>
+  </div>
+</section>
+
+<section class="register" id="register">
+  <div class="content center">
+    <h2>REGISTRATION</h2>
+    <p class="lead" style="margin:auto">Become a member of the Student Management Club. Fill in the details below to register.</p>
+    <form id="registrationForm">
+      <h3>Register Here</h3>
+      <label for="name">Name</label><input id="name" name="name" type="text" placeholder="Enter your name" required>
+      <label for="age">Age</label><input id="age" name="age" type="number" min="13" max="100" placeholder="Enter your age" required>
+      <label for="email">Email ID</label><input id="email" name="email" type="email" placeholder="Enter your email ID" required>
+      <label for="phone">Phone No.</label><input id="phone" name="phone" type="tel" pattern="[0-9+\-\s]{10,15}" placeholder="Enter your phone number" required>
+      <label for="club">Club Name</label>
+      <select id="club" name="club" required>
+        <option value="">Select your club</option>
+        <option>Academic Club</option><option>Cultural Club</option><option>Sports Club</option><option>Environment Club</option><option>Social Service Club</option><option>Technology Club</option>
+      </select>
+      <button class="btn" type="submit">REGISTER</button>
+      <p class="small">Demo form: details are checked in this page only; they are not sent to a college database.</p>
+    </form>
+    <a class="btn" href="#home">Back to Home ↑</a>
+  </div>
+</section>
+<footer>© 2026 Student Management Club | Learn • Lead • Participate</footer>
+<script>
+document.getElementById('registrationForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  if(this.reportValidity()){
+    alert('Thank you! Your registration details have been entered successfully in this demo.');
+    this.reset();
+  }
+});
+</script>
+</body>
+</html>
